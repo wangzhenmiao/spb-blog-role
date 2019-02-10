@@ -50,8 +50,8 @@
  
  六、安全配置类
  
-@EnableWebSecurity
-public class SecurityConfig extends WebSecurityConfigurerAdapter {
+  @EnableWebSecurity
+  public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	/**
      * 自定义配置
