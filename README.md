@@ -50,18 +50,18 @@
  
  六、安全配置类
  
-  @EnableWebSecurity
-  public class SecurityConfig extends WebSecurityConfigurerAdapter {
+  	@EnableWebSecurity
+ 	 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	
-	/**
-     * 自定义配置
-     */
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests()
-            .antMatchers("/css/**", "/js/**", "/fonts/**", "/index").permitAll(); // 都可以访问
-    }
-}
+		/**
+     	* 自定义配置
+     	*/
+    	@Override
+    	protected void configure(HttpSecurity http) throws Exception {
+        	http.authorizeRequests()
+    	        .antMatchers("/css/**", "/js/**", "/fonts/**", "/index").permitAll(); // 都可以访问
+   	 }
+	}
  
  
  
